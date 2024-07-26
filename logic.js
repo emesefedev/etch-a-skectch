@@ -54,12 +54,19 @@ function generateGrid(container) {
         const target = event.target
         if (target != container) {
             target.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`
+            const opacity = +target.style.opacity
+            if (opacity < 1) {
+                target.style.opacity = `${opacity + 0.1}`
+            }
+            
         }
+        
     })
 
     for (i = 0; i < totalElements; i++) {
         const div = document.createElement("div")
         div.classList.add("flex-item")
+        div.style.opacity = 0.1
         container.appendChild(div)
     }
 }
