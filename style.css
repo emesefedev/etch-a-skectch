@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
+    margin: auto;
 }
 
 .flex-item {
@@ -14,4 +15,13 @@
     background-color: red;
     width: 16px;
     height: 16px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.my-25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
