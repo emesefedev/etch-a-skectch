@@ -53,7 +53,7 @@ function generateGrid(container) {
     container.addEventListener("mouseover", (event) => {
         const target = event.target
         if (target != container) {
-            target.classList.add("flex-item-hover")
+            target.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`
         }
     })
 

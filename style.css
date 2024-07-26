@@ -6,13 +6,7 @@
 }
 
 .flex-item {
-    background-color: blueviolet;
-    width: 16px;
-    height: 16px;
-}
-
-.flex-item-hover {
-    background-color: red;
+    background-color: lightgray;
     width: 16px;
     height: 16px;
 }
